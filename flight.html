@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/png-transparent-google-flights-airline-ticket-hotel-travel-blue-angle-flight-thumbnail.png" type="image/x-icon">
+    <title>Book a filght for visiting worlds famous bridges.</title>
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+main {
+    padding: 20px 0;
+}
+
+#search-section, #results-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-section h2, #results-section h2 {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #00bf63, #5ce1e6);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 0.7em;
+  stroke-width: 2px;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 0.9em 0.8em 1.02em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.result-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.result-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.result-card .details {
+    padding: 20px;
+}
+
+.result-card h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+.header-hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url(https://www.qantas.com/images/qac/qantas-news-images/april-23/qantas-787-flyover-sfo/jpg/hero.desktop.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-hero h1{
+    text-align: center;
+    font-size: 3.5em;
+    border: 3px solid black;
+    padding: 9px;
+    width: 15.8em;
+}
+
+    </style>
+</head>
+<body>
+   <section>
+    <div class="header-hero">
+        <h1>Book a filght for visiting worlds famous bridges.</h1> 
+    
+
+</div>
+   </section>
+
+
+    <main>
+        <div class="container">
+            <section id="search-section">
+                <h2>Search for Flights</h2>
+                <form id="search-form">
+                    <div class="form-group">
+                        <label for="departure">Departure:</label>
+                        <input type="text" id="departure" placeholder="Enter departure city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" placeholder="Enter destination city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="departure-date">Departure Date:</label>
+                        <input type="date" id="departure-date">
+                    </div>
+
+                    <!-- <button type="submit">Search</button> -->
+
+                    <button class="cssbuttons-io">
+                        <span>
+                          Search
+                          <svg
+                            viewBox="0 0 19.9 19.7"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-labelledby="title desc"
+                            class="svg-icon search-icon"
+                          >
+                            <title>Search Icon</title>
+                            <desc id="desc">A magnifying glass icon.</desc>
+                            <g stroke="white" fill="none" class="search-path">
+                              <path d="M18.5 18.3l-5.4-5.4" stroke-linecap="square"></path>
+                              <circle r="7" cy="8" cx="8"></circle>
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                      
+
+                </form>
+            </section>
+            <section id="results-section">
+                <h2>Search Results</h2>
+                <div id="results" class="grid-container"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 World's Famous Bridges Flight Booking</p>
+        </div>
+    </footer>
+    <script>
+        // You can add JavaScript functionality here such as handling form submission and displaying search results.
+document.getElementById('search-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Fetch flight data based on form input
+    const departure = document.getElementById('departure').value;
+    const destination = document.getElementById('destination').value;
+    const departureDate = document.getElementById('departure-date').value;
+
+    // Here you would typically fetch flight data from a server based on the input and display the results
+    // For now, let's assume we have some dummy data
+    const results = [
+        { flightNumber: 'ABC123', departure: 'New York', destination: 'San Francisco', departureDate: '2024-04-01', price: '$300' },
+        { flightNumber: 'XYZ456', departure: 'London', destination: 'Paris', departureDate: '2024-04-02', price: '£250' }
+    ];
+
+    displayResults(results);
+});
+
+function displayResults(results) {
+    const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = '';
+
+    results.forEach(flight => {
+        const card = document.createElement('div');
+        card.classList.add('result-card');
+        card.innerHTML = `
+            <p><strong>Flight Number:</strong> ${flight.flightNumber}</p>
+            <p><strong>Departure:</strong> ${flight.departure}</p>
+            <p><strong>Destination:</strong> ${flight.destination}</p>
+            <p><strong>Departure Date:</strong> ${flight.departureDate}</p>
+            <p><strong>Price:</strong> ${flight.price}</p>
+        `;
+        resultsContainer.appendChild(card);
+    });
+}
+
+    </script>
+</body>
+</html>
